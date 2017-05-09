@@ -44,7 +44,7 @@ export class Profile extends Component {
     }
 
     save(){
-        this.props.authActions.setAccount(this._account);
+        this.props.authActions.saveAccount(this._account);
         history.goBack();
     }
 
@@ -72,42 +72,12 @@ export class Profile extends Component {
                                  label="profile.firstName.label"/>}
                 </div>
                 <div className="profile-details col-12 col-md-8 list-group">
-                    <InlineInput value={account.room}
-                                edit={edit}
-                                className="list-group-item"
-                                name="room"
-                                onChange={this.onChange}
-                                label="profile.apartment.label"/>
-                    <InlineInput value={account.phone}
-                                 edit={edit}
-                                 className="list-group-item"
-                                 name="phone"
-                                 onChange={this.onChange}
-                                 label="profile.phone.label"/>
                     <InlineInput value={account.email}
                                  edit={edit}
                                  className="list-group-item"
                                  name="email"
                                  onChange={this.onChange}
                                  label="profile.email.label"/>
-                    <InlineInput value={account.biography}
-                                 edit={edit}
-                                 className="list-group-item"
-                                 name="biography"
-                                 onChange={this.onChange}
-                                 label="profile.biography.label"/>
-                    <InlineInput value={account.family}
-                                 edit={edit}
-                                 className="list-group-item"
-                                 name="family"
-                                 onChange={this.onChange}
-                                 label="profile.family.label"/>
-                    <InlineInput value={account.education}
-                                 edit={edit}
-                                 className="list-group-item"
-                                 name="education"
-                                 onChange={this.onChange}
-                                 label="profile.education.label"/>
                 </div>
                 <div className={`col-12 profile-footer ${edit && 'edit'}`}>
                     {!edit &&

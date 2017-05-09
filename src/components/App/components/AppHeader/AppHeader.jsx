@@ -18,7 +18,6 @@ export class AppHeader extends Component {
         this.goBack = this.goBack.bind(this);
 
         this.state = {
-            app: props.app,
             back: props.back,
             account: props.account,
             content: props.content
@@ -68,7 +67,6 @@ export class AppHeader extends Component {
 }
 
 AppHeader.propTypes = {
-    app: PropTypes.object,
     back: PropTypes.bool,
     account: PropTypes.object,
     content: PropTypes.object
@@ -76,7 +74,6 @@ AppHeader.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        app: state.authReducers.app,
         back: state.appReducers.back,
         account: state.authReducers.account,
         content: state.appReducers.content
