@@ -1,0 +1,17 @@
+@import '../../../../styles/utilities';
+
+.form-input-radio {
+    position: absolute;
+    margin-left: -1.5rem;
+    transform: scale(1.25);
+}
+.form-check-inline {
+    margin-left: .5rem;
+}
+
+.form-fa-inline {
+    font-size: 1.25rem;
+    color: $brand-medium-dark;
+    margin: 0rem .5rem;
+}
+

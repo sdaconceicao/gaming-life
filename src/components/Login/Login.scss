@@ -1,0 +1,69 @@
+@import '../../styles/utilities.scss';
+
+.app-login-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.app-login {
+
+    text-align: center;
+    color: $brand-primary;
+    background-color: $brand-light;
+
+    &.loading{
+        .spinner{
+            margin: 50%;
+        }
+    }
+
+    .app-login-logo {
+        margin: 4em auto;
+        width: 50%;
+    }
+
+    .app-login-error {
+        text-align: center;
+        color: $brand-error-text;
+        border-color: $brand-error-border;
+        margin: 1rem 0rem;
+    }
+
+    .form-property {
+        width: 100%;
+        padding: .5rem 1rem;
+        border-bottom: 1px solid $brand-primary;
+    }
+
+    .form-property:first-child {
+        border-top: 1px solid $brand-primary;
+    }
+}
+
+@include media-breakpoint-up(md) {
+
+    .app-login {
+        position: relative;
+        top: 5rem;
+        border: 2px solid $brand-primary;
+        border-radius: 1.5rem;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .app-login {
+        width: 40%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .app-login {
+        width: 100%;
+        height: 100%;
+    }
+}
