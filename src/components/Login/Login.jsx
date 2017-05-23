@@ -65,7 +65,7 @@ export class Login extends Component {
                                          label="login.password.label"/>
                             <button className="btn primary" type="submit">
                                 {authenticating && <span>Logging in....</span>}
-                                {!authenticating && <span><I18nText id="login.submit.button"/></span>}
+                                {!authenticating && <I18nText id="login.submit.button"/>}
                             </button>
                         </form>
                     </div>
