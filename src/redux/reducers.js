@@ -4,7 +4,7 @@ import authReducers from './Authenticate/Authenticate.reducers';
 import libraryReducers from './Library/Library.reducers';
 
 export const rootReducer = combineReducers({
-    appReducers,
-    authReducers,
-    libraryReducers
+    app: appReducers,
+    auth: authReducers,
+    library: libraryReducers
 });

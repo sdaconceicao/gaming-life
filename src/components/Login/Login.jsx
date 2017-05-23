@@ -65,7 +65,7 @@ export class Login extends Component {
                                          label="login.password.label"/>
                             <button className="btn primary" type="submit">
                                 {authenticating && <span>Logging in....</span>}
-                                {!authenticating && <span>Login</span>}
+                                {!authenticating && <span><I18nText id="login.submit.button"/></span>}
                             </button>
                         </form>
                     </div>
@@ -82,7 +82,7 @@ export class Login extends Component {
 
 function mapStateToProps(state, ownProps) {
     return {
-        authenticated: state.authReducers.authenticated
+        authenticated: state.auth.authenticated
     };
 }
 

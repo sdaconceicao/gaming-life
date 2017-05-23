@@ -105,7 +105,7 @@ Profile.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        account: state.authReducers.account
+        account: state.auth.account
     };
 }
 

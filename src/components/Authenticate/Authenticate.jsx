@@ -24,7 +24,7 @@ export class Authenticate extends Component {
 
 function mapStateToProps(state, ownProps) {
     return {
-        authenticated: state.authReducers.authenticated
+        authenticated: state.auth.authenticated
     };
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {injectIntl} from 'react-intl';
 
-const Button = (props) => {
+export const Button = (props) => {
     const {intl, className, name, text, onClick, type} = props;
     return (
         <button

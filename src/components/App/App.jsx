@@ -55,7 +55,7 @@ App.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        authenticated: state.authReducers.authenticated
+        authenticated: state.auth.authenticated
     };
 }
 

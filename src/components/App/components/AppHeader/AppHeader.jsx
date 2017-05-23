@@ -5,7 +5,7 @@ import history from '../../../../history';
 import I18nText from '../../../Common/I18nText/I18nText';
 import * as appActions from '../../../../redux/App/App.actions';
 import * as authActions from '../../../../redux/Authenticate/Authenticate.actions';
-import {FaArrowLeft} from 'react-icons/lib/fa';
+import FaArrowLeft from 'react-icons/lib/fa/arrow-left';
 import ProfileIcon from '../../../Common/ProfileIcon/ProfileIcon';
 import './AppHeader.scss';
 
@@ -74,9 +74,9 @@ AppHeader.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        back: state.appReducers.back,
-        account: state.authReducers.account,
-        content: state.appReducers.content
+        back: state.app.back,
+        account: state.auth.account,
+        content: state.app.content
     };
 }
 

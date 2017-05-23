@@ -27,7 +27,7 @@ export class Home extends Component {
 
 function mapStateToProps(state, ownProps) {
     return {
-        back: state.appReducers.back
+        back: state.app.back
     };
 }
 
