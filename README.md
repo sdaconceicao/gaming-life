@@ -1,21 +1,21 @@
-#Gaming Life
+# Gaming Life
 
-##Details
+## Details
 Track your gaming habits.  Built with React
 
-##Dev Requires 
+## Dev Requires 
 1. [Node 6+](https://nodejs.org/en/download/)
 2. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 
-##Setup
+## Setup
 yarn install
 
-##Startup
+## Startup
 1. yarn start - API backend
 2. yarn start:mocks - Mock backend
 
-##Testing
+## Testing
 yarn test:watch
 
-##Build
+## Build
 yarn build
