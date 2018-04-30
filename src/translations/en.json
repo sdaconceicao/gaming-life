@@ -1,17 +1,3 @@
 {
-  "common.noresults.label": "No results found",
-  "common.search.placeholder": "Search {label}",
-  "common.save.button": "Save",
-  "common.cancel.button": "Cancel",
-  "app.nav.home": "Home",
-  "app.nav.library": "Library",
-  "profile.title": "My Profile",
-  "profile.edit.button": "Edit My Profile",
-  "profile.avatar.button": "Change Photo",
-  "profile.firstName.label":  "First Name",
-  "profile.lastName.label":  "Last Name",
-  "profile.email.label":  "Email",
-  "login.username.label": "Username",
-  "login.password.label": "Password",
-  "login.submit.button": "Login"
+
 }
