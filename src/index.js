@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { IntlProvider } from 'react-intl';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {BrowserRouter as Router} from 'react-router-dom';
 import axios from 'axios';
 
@@ -14,9 +13,7 @@ import './styles/index.scss';
 apiConfig(axios, MOCKS_ENABLED);  // eslint-disable-line no-undef
 ReactDOM.render(
     <IntlProvider locale="en" messages={enMessage}>
-        <MuiThemeProvider>
-           <Router><App/></Router>
-        </MuiThemeProvider>
+       <Router><App/></Router>
     </IntlProvider>,
     document.getElementById('root')
 );

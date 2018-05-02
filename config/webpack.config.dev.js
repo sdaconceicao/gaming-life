@@ -97,12 +97,14 @@ module.exports = {
                 test: /\.css|scss$/,
                 use: [
                     {
-                        loader: "style-loader" // creates style nodes from JS strings
+                        loader: "style-loader", // creates style nodes from JS strings
                     },
                     {
                         loader: 'css-loader',
                         options: {
-                            importLoaders: 1
+                            modules: true,
+                            importLoaders: 1,
+                            localIdentName: "[name]--[local]--[hash:base64:8]"
                         }
                     },
                     {

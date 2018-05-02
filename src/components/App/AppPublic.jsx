@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import {Dashboard} from '../Dashboard';
+import {Login} from '../Login';
 
-export const AppContent = () => (
+export const AppPublic = () => (
     <main>
         <Switch>
-            <Route exact path='/' component={Dashboard}/>
+            <Route exact path='/' component={Login}/>
         </Switch>
     </main>
 )

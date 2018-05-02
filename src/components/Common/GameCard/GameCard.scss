@@ -1,0 +1,38 @@
+.card{
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    &:hover .title{
+        display: block;
+    }
+    .title{
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 5px;
+        display: none;
+    }
+    .completed{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+.portrait{
+    width: 135px;
+    height: 190px;
+    composes: card;
+}
+.landscape{
+    width: 200px;
+    height: 100px;
+    composes: card;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    composes: card;
+}
+
+
