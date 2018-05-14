@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {AppHeader} from './AppHeader';
 import {AppContent} from './AppContent';
+import {AppMenu} from './AppMenu';
 import {AppPublic} from './AppPublic';
-import './App.scss';
-
+import styles from './App.scss';
 
 export class App extends Component {
 
@@ -16,10 +16,13 @@ export class App extends Component {
 
         const {authenticated} = this.state;
         return (
-            <div className="app-content">
+            <div className={styles.main}>
                 <AppHeader />
                 {authenticated &&
-                    <AppContent/>
+                    <div className={styles.wrapper}>
+                        <AppMenu/>
+                        <AppContent/>
+                    </div>
                 }
                 {!authenticated &&
                     <AppPublic/>
