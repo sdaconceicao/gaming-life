@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import MdCheckCircle from 'react-icons/lib/md/check-circle';
 
 import PlaceholderImage from '../PlaceholderImage/PlaceholderImage';
-import styles from './GameCard.scss';
+import './GameCard.scss';
 
 export const GameCard = (props) =>{
     const {className, title, image, aspect, completed} = props;
     return (
-        <div className={`${styles[aspect]} ${className}`}>
-            <h4 className={styles.title}>{title}</h4>
+        <div className={`gamecard ${aspect} ${className}`}>
+            <h4 className={'title'}>{title}</h4>
             <PlaceholderImage src={image} alt={title} />
-            {completed && <span className={styles.completed}><MdCheckCircle/></span> }
+            {completed && <span className={'completed'}><MdCheckCircle/></span> }
         </div>
     )
 

@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import {Dashboard} from '../Dashboard';
+import React from 'react';
+
+import { Authenticated } from '../Routes';
 
 export const AppContent = () => (
-    <main>
-        <Switch>
-            <Route exact path='/' component={Dashboard}/>
-        </Switch>
+    <main className="app__main">
+        <Authenticated/>
     </main>
 )

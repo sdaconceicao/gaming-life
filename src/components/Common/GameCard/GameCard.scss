@@ -1,4 +1,4 @@
-.card{
+.gamecard{
     position: relative;
     display: inline-block;
     margin: 1rem;
@@ -16,23 +16,23 @@
         top: 5px;
         right: 5px;
     }
+
+    &.portrait{
+        width: 135px;
+        height: 190px;
+    }
+    &.landscape{
+        width: 200px;
+        height: 100px;
+    }
+
+    &.square{
+        width: 200px;
+        height: 200px;
+    }
+
+
 }
 
-.portrait{
-    width: 135px;
-    height: 190px;
-    composes: card;
-}
-.landscape{
-    width: 200px;
-    height: 100px;
-    composes: card;
-}
-
-.square{
-    width: 200px;
-    height: 200px;
-    composes: card;
-}
 
 

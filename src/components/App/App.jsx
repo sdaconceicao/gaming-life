@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+
 import {AppHeader} from './AppHeader';
 import {AppContent} from './AppContent';
-import {AppMenu} from './AppMenu';
-import {AppPublic} from './AppPublic';
-import styles from './App.scss';
+import { Public } from '../Routes';
+import './App.scss';
 
 export class App extends Component {
 
@@ -16,16 +16,15 @@ export class App extends Component {
 
         const {authenticated} = this.state;
         return (
-            <div className={styles.main}>
-                <AppHeader />
+            <div className="app">
                 {authenticated &&
-                    <div className={styles.wrapper}>
-                        <AppMenu/>
+                    <Fragment>
+                        <AppHeader/>
                         <AppContent/>
-                    </div>
+                    </Fragment>
                 }
                 {!authenticated &&
-                    <AppPublic/>
+                    <Public/>
                 }
             </div>
         );
